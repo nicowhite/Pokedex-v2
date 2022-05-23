@@ -60,7 +60,7 @@ function createPokemon(pokemon) {
   spriteContainer.appendChild(sprite);
 
   const number = document.createElement("p");
-  number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`;
+  number.textContent = `#${pokemon.id.toString().padStart(4, 0)}`;
 
   const name = document.createElement("p");
   name.classList.add("name");
@@ -84,10 +84,10 @@ function progressBars(stats) {
   const statsContainer = document.createElement("div");
   statsContainer.classList.add("stats-container");
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     const stat = stats[i];
 
-    const statPercent = stat.base_stat / 2 + "%";
+    const statPercent = stat.base_stat / 5 + "%";
     const statContainer = document.createElement("stat-container");
     statContainer.classList.add("stat-container");
 
